@@ -1,0 +1,68 @@
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #333;
+}
+
+.navbar {
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #444 !important;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #0d6efd !important;
+}
+
+.btn-primary {
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+header {
+    background: linear-gradient(135deg, #91afce 0%, #e9ecef 100%);
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+.subcolor h2 {
+    color:#0d6efd;
+}
+
+.weaver {
+  letter-spacing: 3px;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.spaceout {
+    margin-top:40px;
+}
+
+header.py-5 {
+    /* Overlay a dark gradient to ensure the white text remains readable */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('images/wweaver_working_image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Optional: adds a slight parallax effect as you scroll */
+    background-attachment: scroll; 
+    color: white !important;
+}
+
+/* Ensure the sub-text also remains visible against the background */
+header .text-white-50 {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
