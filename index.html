@@ -1,85 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Weaver</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" as="image" href="./wweaver-logo.png">
+<link rel="preload" as="image" href="./hero-visual.jpg">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./fonts.css">
+<title>WWeaver — Websites, SEO &amp; Virtual Bots for Growing Businesses</title>
+<meta name="description" content="WWeaver crafts high-performance websites, SEO, social and Google review integrations, and custom virtual bots that turn clicks into customers.">
+<meta name="author" content="WWeaver">
+<meta property="og:title" content="WWeaver — Websites, SEO &amp; Virtual Bots for Growing Businesses">
+<meta property="og:description" content="WWeaver crafts high-performance websites, SEO, social and Google review integrations, and custom virtual bots that turn clicks into customers.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WWeaver — Websites, SEO &amp; Virtual Bots for Growing Businesses">
+<meta name="twitter:description" content="WWeaver crafts high-performance websites, SEO, social and Google review integrations, and custom virtual bots that turn clicks into customers.">
+<link rel="icon" type="image/png" href="./wweaver-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+<style>.faq-icon{transition:transform .2s ease;}</style>
 </head>
 <body>
+<div class="min-h-screen bg-paper text-ink selection:bg-ink selection:text-paper">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold weaver" href="index.html"><img src="images/wweaver_logo.png" width='100' alt="WWeaver Logo">WWeaver</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<nav class="sticky top-0 z-50 border-b border-hairline/70 bg-paper/80 backdrop-blur-md">
+<div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
+<a href="#top" class="flex items-center gap-2.5"><img src="./wweaver-logo.png" alt="WWeaver" class="h-8 w-auto"><span class="font-display text-lg font-semibold tracking-tight">WWeaver</span></a>
+<div class="hidden items-center gap-8 text-sm font-medium text-ink-soft md:flex">
+<a href="#services" class="transition-colors hover:text-ink">Services</a>
+<a href="#process" class="transition-colors hover:text-ink">Process</a>
+<a href="#work" class="transition-colors hover:text-ink">Results</a>
+<a href="#faq" class="transition-colors hover:text-ink">FAQ</a>
+</div>
+<a href="#contact" class="group inline-flex items-center gap-1.5 rounded-full bg-ink px-4 py-2 text-sm font-medium text-paper transition-all hover:bg-ink-soft">Start a project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</div>
+</nav>
 
-    <header class="bg-light py-5 border-bottom">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center justify-content-center">
-                <div class="col-lg-8 col-xl-7 col-xxl-6">
-                    <div class="my-5 text-center text-xl-start">
-                        <h1 class="display-5 fw-bolder mb-2">Crafting Digital Masterpieces That Turn Clicks Into Customers</h1>
-                        <p class="lead fw-normal text-muted mb-4">We build the web presence your brand deserves — blazing-fast websites, AI-powered workflows, and marketing funnels engineered to convert.</p>
-                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
-                            <a class="btn btn-outline-dark btn-lg px-4" href="about.html">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
-                    <img class="img-fluid rounded-3 my-5" src="images/wweaver_worker.png" alt="A WWeaver employee working on the website" />
-                </div> -->
-            </div>
-        </div>
-    </header>
+<header id="top" class="relative overflow-hidden border-b border-hairline">
+<div class="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 py-20 lg:grid-cols-12 lg:gap-16 lg:px-8 lg:py-32">
+<div class="lg:col-span-7 flex flex-col justify-center animate-reveal">
+<div class="inline-flex w-fit items-center gap-2 rounded-full border border-hairline bg-white px-3 py-1"><span class="relative flex size-1.5"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal opacity-70"></span><span class="relative inline-flex size-1.5 rounded-full bg-teal"></span></span><span class="font-mono text-[10px] uppercase tracking-[0.18em] text-steel">Websites · SEO · Bots</span></div>
+<h1 class="mt-8 font-display text-5xl font-semibold leading-[0.95] tracking-tight text-balance sm:text-6xl lg:text-7xl">Crafting digital masterpieces that turn <span class="italic text-teal">clicks</span> into customers.</h1>
+<p class="mt-8 max-w-[52ch] text-lg leading-relaxed text-ink-soft text-pretty">WWeaver builds fast, beautiful websites, tunes them for search, wires them into your social and review channels, and adds virtual bots that engage visitors around the clock.</p>
+<div class="mt-10 flex flex-wrap items-center gap-4">
+<a href="#contact" class="group inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-medium text-paper shadow-elevated transition-all hover:-translate-y-0.5 hover:bg-ink-soft">Book a discovery call<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+<a href="#services" class="inline-flex items-center gap-2 rounded-full border border-hairline bg-white px-6 py-3.5 text-sm font-medium text-ink transition-colors hover:bg-paper-soft">Explore services</a>
+</div>
+<dl class="mt-14 grid grid-cols-3 gap-6 border-t border-hairline pt-8 max-w-lg">
+<div><dt class="font-display text-3xl font-semibold text-ink">40+</dt><dd class="mt-1 text-xs uppercase tracking-widest text-steel">sites shipped</dd></div>
+<div><dt class="font-display text-3xl font-semibold text-ink">2.3s</dt><dd class="mt-1 text-xs uppercase tracking-widest text-steel">avg load time</dd></div>
+<div><dt class="font-display text-3xl font-semibold text-ink">24/7</dt><dd class="mt-1 text-xs uppercase tracking-widest text-steel">bot uptime</dd></div>
+</dl>
+</div>
+<div class="lg:col-span-5">
+<div class="relative">
+<div class="absolute -inset-6 rounded-3xl bg-teal-soft/30 blur-3xl" aria-hidden="true"></div>
+<div class="relative overflow-hidden rounded-3xl border border-hairline bg-white shadow-elevated">
+<img src="./hero-visual.jpg" alt="Abstract web of connected nodes representing WWeaver's integrated platform" width="1200" height="1400" class="aspect-[4/5] w-full object-cover">
+<div class="absolute inset-x-0 bottom-0 flex items-center justify-between border-t border-hairline bg-white/85 px-5 py-3 backdrop-blur"><span class="font-mono text-[10px] uppercase tracking-widest text-steel">System · v1</span><span class="font-mono text-[10px] uppercase tracking-widest text-ink">Weaving the web</span></div>
+</div>
+</div>
+</div>
+</div>
+</header>
 
-    <section class="py-5" id="features">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center justify-content-center">
-                <div class="col-lg-8 col-xl-7 col-xxl-6">
-                    <div class="my-5 text-center text-xl-start">
-                        <h1 class="display-5 fw-bolder mb-2">Our Bold Promise</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container px-5 my-5">
-            <div class="row gx-5">
-                <div class="col-lg-4 mb-5 mb-lg-0 text-center subcolor">
-                    <h2 class="h4 fw-bolder">4.9/5 Client Rating</h2>
-                    <p>Verified across clients </p>
-                </div>
-                <div class="col-lg-4 mb-5 mb-lg-0 text-center subcolor">
-                    <h2 class="h4 fw-bolder">90 days to Result</h2>
-                    <p>Measurable lead growth, guaranteed or we rebuild free</p>
-                </div>
-                <div class="col-lg-4 text-center subcolor">
-                    <h2 class="h4 fw-bolder">Verified Clients</h2>
-                    <p>Real businesses, real transformations, real revenue</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="border-b border-hairline bg-white py-8">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">Trusted by teams growing their online presence</p>
+<div class="mt-5 flex flex-wrap gap-x-10 gap-y-3 text-ink-soft">
+<span class="font-display text-lg font-medium">Local businesses</span>
+<span class="font-display text-lg font-medium">SaaS founders</span>
+<span class="font-display text-lg font-medium">Boutique agencies</span>
+<span class="font-display text-lg font-medium">E‑commerce brands</span>
+<span class="font-display text-lg font-medium">Clinics &amp; studios</span>
+<span class="font-display text-lg font-medium">Restaurants</span>
+<span class="font-display text-lg font-medium">Real estate</span>
+<span class="font-display text-lg font-medium">Consultants</span>
+</div>
+</div>
+</section>
 
-    <footer class="py-5 bg-dark">
-        <div class="container px-5 text-center">
-            <p class="m-0 text-white small">Copyright &copy; WWeaver 2026</p>
-        </div>
-    </footer>
+<section id="services" class="border-b border-hairline py-24 lg:py-32">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="max-w-3xl">
+<div class="h-px w-24 origin-left animate-line bg-ink"></div>
+<span class="mt-8 block font-mono text-[10px] uppercase tracking-[0.2em] text-steel">What we do</span>
+<h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance sm:text-5xl">Four disciplines. One integrated growth engine.</h2>
+<p class="mt-6 text-lg text-ink-soft">We combine design, engineering, search and conversation into a single system that makes your business impossible to miss — and easy to buy from.</p>
+</div>
+<div class="mt-16 grid grid-cols-1 gap-5 md:grid-cols-2">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<article class="group relative flex flex-col rounded-3xl border border-hairline bg-white p-8 transition-all hover:-translate-y-1 hover:border-ink/20 hover:shadow-card">
+<div class="flex items-start justify-between"><div class="flex size-11 items-center justify-center rounded-xl bg-paper-soft text-ink transition-colors group-hover:bg-ink group-hover:text-paper"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml size-5" aria-hidden="true"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg></div><span class="font-mono text-xs text-steel-soft">01</span></div>
+<h3 class="mt-8 font-display text-2xl font-semibold text-ink">Website development</h3>
+<p class="mt-3 text-ink-soft">Custom, hand-built sites on modern stacks. Fast, accessible, SEO-ready, and easy for you to update.</p>
+<ul class="mt-6 space-y-2.5 border-t border-hairline pt-6">
+<li class="flex items-start gap-2.5 text-sm text-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Marketing sites &amp; landing pages</li>
+<li class="flex items-start gap-2.5 text-sm text-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Headless CMS integration</li>
+<li class="flex items-start gap-2.5 text-sm text-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Performance &amp; Core Web Vitals</li>
+</ul>
+</article>
+
+<article class="group relative flex flex-col rounded-3xl border border-hairline bg-white p-8 transition-all hover:-translate-y-1 hover:border-ink/20 hover:shadow-card">
+<div class="flex items-start justify-between"><div class="flex size-11 items-center justify-center rounded-xl bg-paper-soft text-ink transition-colors group-hover:bg-ink group-hover:text-paper"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search size-5" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></div><span class="font-mono text-xs text-steel-soft">02</span></div>
+<h3 class="mt-8 font-display text-2xl font-semibold text-ink">SEO optimization</h3>
+<p class="mt-3 text-ink-soft">Technical SEO, on-page structure, content strategy and analytics wiring so the right customers can find you.</p>
+<ul class="mt-6 space-y-2.5 border-t border-hairline pt-6">
+<li class="flex items-start gap-2.5 text-sm text-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Technical audit &amp; fixes</li>
+<li class="flex items-start gap-2.5 text-sm text-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Keyword &amp; content strategy</li>
+<li class="flex items-start gap-2.5 text-sm text-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Local &amp; Google Business</li>
+</ul>
+</article>
+
+<article class="group relative flex flex-col rounded-3xl border border-hairline bg-white p-8 transition-all hover:-translate-y-1 hover:border-ink/20 hover:shadow-card">
+<div class="flex items-start justify-between"><div class="flex size-11 items-center justify-center rounded-xl bg-paper-soft text-ink transition-colors group-hover:bg-ink group-hover:text-paper"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 lucide-share-2 size-5" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg></div><span class="font-mono text-xs text-steel-soft">03</span></div>
+<h3 class="mt-8 font-display text-2xl font-semibold text-ink">Social &amp; review integrations</h3>
+<p class="mt-3 text-ink-soft">Connect Instagram, Facebook, LinkedIn and Google Reviews directly into your site — automated and always fresh.</p>
+<ul class="mt-6 space-y-2.5 border-t border-hairline pt-6">
+<li class="flex items-start gap-2.5 text-sm text-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Live Google Reviews widget</li>
+<li class="flex items-start gap-2.5 text-sm text-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Social feeds &amp; sharing</li>
+<li class="flex items-start gap-2.5 text-sm text-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Booking &amp; lead capture</li>
+</ul>
+</article>
+
+<article class="group relative flex flex-col rounded-3xl border border-hairline bg-white p-8 transition-all hover:-translate-y-1 hover:border-ink/20 hover:shadow-card">
+<div class="flex items-start justify-between"><div class="flex size-11 items-center justify-center rounded-xl bg-paper-soft text-ink transition-colors group-hover:bg-ink group-hover:text-paper"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot size-5" aria-hidden="true"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg></div><span class="font-mono text-xs text-steel-soft">04</span></div>
+<h3 class="mt-8 font-display text-2xl font-semibold text-ink">Virtual bot integration</h3>
+<p class="mt-3 text-ink-soft">AI assistants trained on your business — qualifying leads, answering FAQs and booking appointments 24/7.</p>
+<ul class="mt-6 space-y-2.5 border-t border-hairline pt-6">
+<li class="flex items-start gap-2.5 text-sm text-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Custom knowledge base</li>
+<li class="flex items-start gap-2.5 text-sm text-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Multi-channel deployment</li>
+<li class="flex items-start gap-2.5 text-sm text-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 size-4 shrink-0 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Human handoff &amp; analytics</li>
+</ul>
+</article>
+
+</div>
+</div>
+</section>
+
+<section id="process" class="relative overflow-hidden bg-ink py-24 text-paper lg:py-32">
+<div class="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-6 lg:grid-cols-12 lg:gap-20 lg:px-8">
+<div class="lg:col-span-5">
+<span class="font-mono text-[10px] uppercase tracking-[0.2em] text-steel-soft">How we work</span>
+<h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance sm:text-5xl">A calm, deliberate process — no surprises.</h2>
+<p class="mt-6 text-lg text-steel-soft">Every WWeaver engagement follows the same four phases. Predictable timelines, transparent pricing, and one point of contact from day one.</p>
+<div class="mt-10 flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles size-5 text-teal-soft" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg><p class="text-sm text-steel-soft">Most sites go live in <span class="text-paper font-medium">4–6 weeks</span>.</p></div>
+</div>
+<ol class="lg:col-span-7 space-y-0">
+<li class="grid grid-cols-[auto_1fr] gap-6 py-7 border-b border-white/10"><span class="font-mono text-sm text-steel-soft">01</span><div><h3 class="font-display text-2xl font-semibold text-paper">Discover</h3><p class="mt-2 text-steel-soft">We map your customers, goals and channels. A short kickoff yields the blueprint we build against.</p></div></li>
+<li class="grid grid-cols-[auto_1fr] gap-6 py-7 border-b border-white/10"><span class="font-mono text-sm text-steel-soft">02</span><div><h3 class="font-display text-2xl font-semibold text-paper">Design</h3><p class="mt-2 text-steel-soft">Wireframes, brand system and copy — approved before a single line of production code is written.</p></div></li>
+<li class="grid grid-cols-[auto_1fr] gap-6 py-7 border-b border-white/10"><span class="font-mono text-sm text-steel-soft">03</span><div><h3 class="font-display text-2xl font-semibold text-paper">Build</h3><p class="mt-2 text-steel-soft">We engineer your site, connect your review and social channels, and train your virtual bot.</p></div></li>
+<li class="grid grid-cols-[auto_1fr] gap-6 py-7 "><span class="font-mono text-sm text-steel-soft">04</span><div><h3 class="font-display text-2xl font-semibold text-paper">Launch &amp; grow</h3><p class="mt-2 text-steel-soft">We ship, monitor and iterate. Monthly reports show what's converting and what's next.</p></div></li>
+</ol>
+</div>
+</section>
+
+<section id="work" class="border-b border-hairline py-24 lg:py-32">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+<div class="lg:col-span-5">
+<span class="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">The outcome</span>
+<h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance sm:text-5xl">More visibility. More conversations. More customers.</h2>
+<p class="mt-6 text-lg text-ink-soft">Our clients don't just get a prettier website — they get a measurable lift in rankings, reviews and revenue.</p>
+<div class="mt-10 grid grid-cols-2 gap-6">
+<div class="rounded-2xl border border-hairline bg-white p-5"><p class="font-display text-3xl font-semibold text-ink">+184%</p><p class="mt-1 text-xs uppercase tracking-widest text-steel">avg organic traffic</p></div>
+<div class="rounded-2xl border border-hairline bg-white p-5"><p class="font-display text-3xl font-semibold text-ink">+62%</p><p class="mt-1 text-xs uppercase tracking-widest text-steel">lead conversion</p></div>
+<div class="rounded-2xl border border-hairline bg-white p-5"><p class="font-display text-3xl font-semibold text-ink">4.9★</p><p class="mt-1 text-xs uppercase tracking-widest text-steel">review score lift</p></div>
+<div class="rounded-2xl border border-hairline bg-white p-5"><p class="font-display text-3xl font-semibold text-ink">−48%</p><p class="mt-1 text-xs uppercase tracking-widest text-steel">support workload</p></div>
+</div>
+</div>
+<figure class="lg:col-span-7">
+<div class="rounded-3xl border border-hairline bg-white p-10 shadow-card lg:p-14">
+<div class="flex gap-1 text-teal">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star size-5 fill-current" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star size-5 fill-current" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star size-5 fill-current" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star size-5 fill-current" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star size-5 fill-current" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+</div>
+<blockquote class="mt-8 font-display text-2xl font-medium leading-snug text-ink text-balance sm:text-3xl">"WWeaver rebuilt our site, dialed in our SEO and dropped a virtual assistant on the homepage. Within a quarter we were booking twice as many consultations — and finally showing up on Google Maps."</blockquote>
+<figcaption class="mt-10 flex items-center gap-4 border-t border-hairline pt-6">
+<div class="flex size-11 items-center justify-center rounded-full bg-gradient-to-br from-ink to-steel font-display text-sm font-semibold text-paper">LM</div>
+<div><p class="font-medium text-ink">Lena Martins</p><p class="text-sm text-steel">Founder, Northline Dental Studio</p></div>
+</figcaption>
+</div>
+</figure>
+</div>
+</div>
+</section>
+
+<section id="faq" class="border-b border-hairline py-24 lg:py-32">
+<div class="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-6 lg:grid-cols-12 lg:px-8">
+<div class="lg:col-span-4">
+<span class="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">Questions</span>
+<h2 class="mt-4 font-display text-4xl font-semibold tracking-tight text-balance sm:text-5xl">Answers before you ask.</h2>
+<p class="mt-6 text-ink-soft">Still curious? Drop us a note — we usually reply within a business day.</p>
+</div>
+<ul class="lg:col-span-8 divide-y divide-hairline border-y border-hairline" id="faq-list">
+
+<li>
+<button class="faq-trigger flex w-full items-start justify-between gap-6 py-6 text-left" aria-expanded="false">
+<span class="font-display text-lg font-medium text-ink sm:text-xl">How long does a typical project take?</span>
+<span class="faq-icon mt-1 flex size-8 shrink-0 items-center justify-center rounded-full border border-hairline transition-colors text-ink"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></span>
+</button>
+<div class="faq-panel grid overflow-hidden transition-all duration-300 grid-rows-[0fr]">
+<p class="min-h-0 max-w-2xl text-ink-soft">Most marketing sites launch in 4–6 weeks. Larger builds with custom integrations or e-commerce usually run 8–12 weeks. We give you a firm timeline after the discovery call.</p>
+</div>
+</li>
+
+<li>
+<button class="faq-trigger flex w-full items-start justify-between gap-6 py-6 text-left" aria-expanded="false">
+<span class="font-display text-lg font-medium text-ink sm:text-xl">Do I own the website and the bot?</span>
+<span class="faq-icon mt-1 flex size-8 shrink-0 items-center justify-center rounded-full border border-hairline transition-colors text-ink"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></span>
+</button>
+<div class="faq-panel grid overflow-hidden transition-all duration-300 grid-rows-[0fr]">
+<p class="min-h-0 max-w-2xl text-ink-soft">Yes. Everything we build — the code, content, and bot configuration — is yours. We can host and maintain it, or hand it off to your team.</p>
+</div>
+</li>
+
+<li>
+<button class="faq-trigger flex w-full items-start justify-between gap-6 py-6 text-left" aria-expanded="false">
+<span class="font-display text-lg font-medium text-ink sm:text-xl">Can you work with our existing brand?</span>
+<span class="faq-icon mt-1 flex size-8 shrink-0 items-center justify-center rounded-full border border-hairline transition-colors text-ink"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></span>
+</button>
+<div class="faq-panel grid overflow-hidden transition-all duration-300 grid-rows-[0fr]">
+<p class="min-h-0 max-w-2xl text-ink-soft">Absolutely. We happily build on your existing brand system, or we can craft a fresh one from scratch if you're ready for a refresh.</p>
+</div>
+</li>
+
+<li>
+<button class="faq-trigger flex w-full items-start justify-between gap-6 py-6 text-left" aria-expanded="false">
+<span class="font-display text-lg font-medium text-ink sm:text-xl">How do the virtual bots work?</span>
+<span class="faq-icon mt-1 flex size-8 shrink-0 items-center justify-center rounded-full border border-hairline transition-colors text-ink"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></span>
+</button>
+<div class="faq-panel grid overflow-hidden transition-all duration-300 grid-rows-[0fr]">
+<p class="min-h-0 max-w-2xl text-ink-soft">We train an AI assistant on your services, FAQs and tone of voice, then embed it on your website (and optionally WhatsApp, Instagram or Messenger). It qualifies leads, books appointments, and escalates to a human when needed.</p>
+</div>
+</li>
+
+<li>
+<button class="faq-trigger flex w-full items-start justify-between gap-6 py-6 text-left" aria-expanded="false">
+<span class="font-display text-lg font-medium text-ink sm:text-xl">What's included in ongoing SEO?</span>
+<span class="faq-icon mt-1 flex size-8 shrink-0 items-center justify-center rounded-full border border-hairline transition-colors text-ink"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></span>
+</button>
+<div class="faq-panel grid overflow-hidden transition-all duration-300 grid-rows-[0fr]">
+<p class="min-h-0 max-w-2xl text-ink-soft">Monthly technical checks, on-page optimizations, content briefs, Google Business updates and a transparent report showing rankings, traffic and conversions.</p>
+</div>
+</li>
+
+</ul>
+</div>
+</section>
+
+<section id="contact" class="py-24 lg:py-32">
+<div class="mx-auto max-w-6xl px-6 lg:px-8">
+<div class="relative overflow-hidden rounded-[2rem] border border-hairline bg-white p-10 shadow-elevated lg:p-16">
+<div class="absolute -right-32 -top-32 h-96 w-96 rounded-full opacity-40 blur-3xl" style="background:var(--gradient-brand)" aria-hidden="true"></div>
+<div class="relative grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
+<div>
+<h2 class="font-display text-4xl font-semibold tracking-tight text-balance sm:text-5xl">Let's weave your next chapter online.</h2>
+<p class="mt-5 max-w-md text-lg text-ink-soft">Tell us about your business. We'll come back with ideas, a rough plan and honest pricing — no fluff.</p>
+<ul class="mt-8 space-y-3 text-sm text-ink-soft">
+<li class="flex items-center gap-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check size-4 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Free 30-minute discovery call</li>
+<li class="flex items-center gap-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check size-4 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Custom proposal within 3 days</li>
+<li class="flex items-center gap-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check size-4 text-teal" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>No obligation, ever</li>
+</ul>
+</div>
+<form class="rounded-2xl border border-hairline bg-paper-soft p-6 sm:p-8" id="contact-form">
+<div class="grid grid-cols-1 gap-4">
+<label class="block"><span class="text-xs font-medium uppercase tracking-widest text-steel">Name</span><input type="text" required class="mt-1.5 w-full rounded-xl border border-hairline bg-white px-4 py-3 text-ink outline-none transition focus:border-ink" placeholder="Your name"></label>
+<label class="block"><span class="text-xs font-medium uppercase tracking-widest text-steel">Work email</span><input type="email" required class="mt-1.5 w-full rounded-xl border border-hairline bg-white px-4 py-3 text-ink outline-none transition focus:border-ink" placeholder="you@company.com"></label>
+<label class="block"><span class="text-xs font-medium uppercase tracking-widest text-steel">Tell us about your project</span><textarea rows="4" class="mt-1.5 w-full resize-none rounded-xl border border-hairline bg-white px-4 py-3 text-ink outline-none transition focus:border-ink" placeholder="A short paragraph is perfect."></textarea></label>
+<button type="submit" class="group mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-medium text-paper transition-all hover:bg-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>Send inquiry<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="border-t border-hairline bg-white py-12">
+<div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center lg:px-8">
+<div class="flex items-center gap-2.5"><img src="./wweaver-logo.png" alt="WWeaver" class="h-7 w-auto"><div><p class="font-display text-sm font-semibold text-ink">WWeaver</p><p class="text-xs text-steel">Crafting digital masterpieces.</p></div></div>
+<nav class="flex flex-wrap gap-6 text-sm text-ink-soft">
+<a href="#services" class="hover:text-ink">Services</a>
+<a href="#process" class="hover:text-ink">Process</a>
+<a href="#faq" class="hover:text-ink">FAQ</a>
+<a href="#contact" class="hover:text-ink">Contact</a>
+</nav>
+<p class="font-mono text-[10px] uppercase tracking-widest text-steel">© 2026 WWeaver Studio</p>
+</div>
+</footer>
+
+</div>
+
+<script>
+// FAQ accordion
+document.querySelectorAll('.faq-trigger').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var panel = btn.nextElementSibling;
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    var icon = btn.querySelector('.faq-icon');
+
+    // Close all other panels
+    document.querySelectorAll('.faq-trigger').forEach(function (otherBtn) {
+      if (otherBtn !== btn) {
+        otherBtn.setAttribute('aria-expanded', 'false');
+        otherBtn.nextElementSibling.style.gridTemplateRows = '0fr';
+        var otherIcon = otherBtn.querySelector('.faq-icon');
+        if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+      }
+    });
+
+    btn.setAttribute('aria-expanded', String(!expanded));
+    panel.style.gridTemplateRows = expanded ? '0fr' : '1fr';
+    if (icon) icon.style.transform = expanded ? 'rotate(0deg)' : 'rotate(45deg)';
+  });
+});
+
+// Simple contact form handler (no backend wired up)
+var contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thanks! Your message has been noted. Wire this form up to your email or CRM of choice.');
+    contactForm.reset();
+  });
+}
+</script>
+
 </body>
 </html>
