@@ -21,7 +21,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
 <style>.faq-icon{transition:transform .2s ease;}</style>
 </head>
+<head>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function() {
+      emailjs.init({
+        publicKey: "9D09AilWN1clgczCM",
+      });
+    })();
+  </script>
+</head>
 <body>
+<div id="enquiry-toast">Enquiry sent successfully!</div>
+
 <div class="min-h-screen bg-paper text-ink selection:bg-ink selection:text-paper">
 
 <nav class="sticky top-0 z-50 border-b border-hairline/70 bg-paper/80 backdrop-blur-md">
@@ -269,10 +283,10 @@
 </div>
 <form class="rounded-2xl border border-hairline bg-paper-soft p-6 sm:p-8" id="contact-form">
 <div class="grid grid-cols-1 gap-4">
-<label class="block"><span class="text-xs font-medium uppercase tracking-widest text-steel">Name</span><input type="text" required class="mt-1.5 w-full rounded-xl border border-hairline bg-white px-4 py-3 text-ink outline-none transition focus:border-ink" placeholder="Your name"></label>
-<label class="block"><span class="text-xs font-medium uppercase tracking-widest text-steel">Work email</span><input type="email" required class="mt-1.5 w-full rounded-xl border border-hairline bg-white px-4 py-3 text-ink outline-none transition focus:border-ink" placeholder="you@company.com"></label>
-<label class="block"><span class="text-xs font-medium uppercase tracking-widest text-steel">Tell us about your project</span><textarea rows="4" class="mt-1.5 w-full resize-none rounded-xl border border-hairline bg-white px-4 py-3 text-ink outline-none transition focus:border-ink" placeholder="A short paragraph is perfect."></textarea></label>
-<button type="submit" class="group mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-medium text-paper transition-all hover:bg-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>Send inquiry<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
+<label class="block"><span class="text-xs font-medium uppercase tracking-widest text-steel">Name</span><input type="text" required class="mt-1.5 w-full rounded-xl border border-hairline bg-white px-4 py-3 text-ink outline-none transition focus:border-ink" id="from_name" placeholder="Your name"></label>
+<label class="block"><span class="text-xs font-medium uppercase tracking-widest text-steel">Work email</span><input type="email" required class="mt-1.5 w-full rounded-xl border border-hairline bg-white px-4 py-3 text-ink outline-none transition focus:border-ink" id="from_email" placeholder="you@company.com"></label>
+<label class="block"><span class="text-xs font-medium uppercase tracking-widest text-steel">Tell us about your project</span><textarea rows="4" class="mt-1.5 w-full resize-none rounded-xl border border-hairline bg-white px-4 py-3 text-ink outline-none transition focus:border-ink" id="message" placeholder="A short paragraph is perfect."></textarea></label>
+<button onclick="sendEnquiry()" type="submit" class="group mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-medium text-paper transition-all hover:bg-ink-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>Send inquiry<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></button>
 </div>
 </form>
 </div>
@@ -324,9 +338,33 @@ var contactForm = document.getElementById('contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    alert('Thanks! Your message has been noted. Wire this form up to your email or CRM of choice.');
-    contactForm.reset();
   });
+}
+
+function sendEnquiry() {
+    const templateParams = {
+        name: document.getElementById('from_name').value,
+        user_email: document.getElementById('from_email').value,
+        message: document.getElementById('message').value
+    };
+
+    emailjs.send('service_06svirb', 'template_rd5h9mf', templateParams)
+        .then((response) => {
+          const toast = document.getElementById('enquiry-toast');
+
+          toast.textContent = 'Enquiry sent successfully!';
+          toast.classList.add('show');
+
+          setTimeout(() => {
+              toast.classList.remove('show');
+              window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth'
+              });
+          }, 3000);        
+        }, (error) => {
+            alert('Failed to send, please try again.');
+        });
 }
 </script>
 
